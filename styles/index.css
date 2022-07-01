@@ -1,0 +1,122 @@
+*,
+input,
+:before,
+:after {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn,
+input.btn-secondary,
+.btn-secondary,
+.shopify-payment-button__button--unbranded,
+.header-cart-btn,
+input[type="submit"] {
+  display: inline-block;
+  letter-spacing: var(--btnLetterSpacing);
+  padding: var(--btnPadding);
+  margin: 0;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  border-radius: var(--btnBorderRadius);
+  font-family: var(--accentFontStack);
+  font-weight: var(--btnFontWeight);
+  font-size: var(--btnFontSize);
+  transition: background-color 0.2s ease-out;
+  background-color: var(--colorBtnPrimaryBg);
+  color: white;
+  filter: brightness(100%);
+  width: 100%;
+  font-size: var(--btnAtcFontSize);
+  color: white;
+  background: #fb8b15;
+  box-shadow: inset 0 0 0 1px 1px;
+  padding: 10px;
+  max-width: fit-content;
+  margin: auto;
+}
+
+input {
+  border: black solid 2px !important;
+  max-width: 273px !important;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* Thirds */
+.one-third,
+.large--one-third {
+  width: calc(33.333% - 40px);
+}
+.two-thirds,
+.large--two-thirds {
+  width: calc(66.66667% - 40px);
+}
+
+.container.flex .child {
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 20px;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.custom_prop {
+  margin: 15px auto;
+}
+
+label[for],
+h1 {
+  font-weight: 700;
+}
