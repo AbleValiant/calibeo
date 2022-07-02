@@ -120,3 +120,7 @@ label[for],
 h1 {
   font-weight: 700;
 }
+
+input.hide {
+  display: none;
+}
