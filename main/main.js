@@ -200,11 +200,13 @@ handleAddition = () => {
     };
     let actualTag;
     if (configurationCode == 2) {
-      actualTag = "date";
-      inputElement.att.class = "cust_prop";
+      actualTag = "text";
+      inputElement.att.class = "cust_prop date-picker";
+      inputElement.att.autocomplete = "off";
     } else if (configurationCode == 4) {
       actualTag = "file";
       inputElement.att.class = "cust_prop";
+      inputElement.att.accept = "image/png, image/gif, image/jpeg";
     }
 
     inputElement.att.type = actualTag;
@@ -244,4 +246,9 @@ function applyExtraListeneres() {
         }
       };
     });
+
+  // date picker
+  $(function () {
+    $(".cust_prop.date-picker").datepicker($.datepicker.regional["fr"]);
+  });
 }
