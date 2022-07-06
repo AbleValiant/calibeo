@@ -8,7 +8,16 @@
       href="https://cdn.shopify.com/s/files/1/0465/3383/6964/t/4/assets/theme.css"
     />
     <link rel="stylesheet" href="styles/index.css" />
-    <title>Document</title>
+    <title>Options generator</title>
+    <link
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
   </head>
   <body>
     <div class="container flex">
@@ -32,11 +41,10 @@
         <h1>Preview:</h1>
         <div id="source-prev"></div>
         <button id="b-export" class="btn">Get code</button>
-        <input type="text" placeholder="exported code goes here" id="code-export" />
+        <input type="text" class="hide" id="code-export" />
       </div>
     </div>
 
-    <script src="/main/index.js"></script>
     <script src="lib.js"></script>
     <script src="/main/main.js"></script>
   </body>
