@@ -131,6 +131,8 @@ handleAddition = () => {
       optionsContainer.querySelector("#name-backend").value
     }]`;
 
+    inputElement.att.id = inputId;
+
     let actualTag;
     if (configurationCode == 0) {
       actualTag = "text";
@@ -198,6 +200,9 @@ handleAddition = () => {
       tag: "input",
       att: {},
     };
+
+    inputElement.att.id = inputId;
+
     let actualTag;
     if (configurationCode == 2) {
       actualTag = "text";
