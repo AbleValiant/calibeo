@@ -76,6 +76,7 @@ handleExport = () => {
   /* Get the text field */
   var copyText = document.getElementById("code-export");
   copyText.value = previewContainer.innerHTML;
+  copyText.classList.remove('hide');
 
   /* Select the text field */
   copyText.select();
