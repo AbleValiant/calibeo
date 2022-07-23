@@ -13,6 +13,8 @@ handleTypeChange = (inputCode) => {
       <input id=name-backend>
       <label for=name-frontend>Name on FrontEnd: </label>
       <input id=name-frontend>
+      <label for=name-info-text>Info about min/max etc.: </label>
+      <input id=name-info-text>
       <label for="min-check">Minimum Limit? </label>
     <input id="min-check" type="checkbox">
     <input type="number"id="min-number">
@@ -27,6 +29,8 @@ handleTypeChange = (inputCode) => {
       <input id=name-backend>
       <label for=name-frontend>Name on FrontEnd: </label>
       <input id=name-frontend>
+      <label for=name-info-text>Info about min/max etc.: </label>
+      <input id=name-info-text>
       <label for="min-check">Minimum Limit? </label>
     <input id="min-check" type="checkbox">
     <input type="number"id="min-number">
@@ -48,6 +52,8 @@ handleTypeChange = (inputCode) => {
       <input id=name-backend>
       <label for=name-frontend>Name on FrontEnd: </label>
       <input id=name-frontend>
+      <label for=name-info-text>Info about min/max etc.: </label>
+      <input id=name-info-text>
       <label for="min-check">Minimum Limit? </label>
     <input id="min-check" type="checkbox">
     <input type="number"id="min-number">
@@ -76,7 +82,6 @@ handleExport = () => {
   /* Get the text field */
   var copyText = document.getElementById("code-export");
   copyText.value = previewContainer.innerHTML;
-  copyText.classList.remove('hide');
 
   /* Select the text field */
   copyText.select();
@@ -194,6 +199,14 @@ handleAddition = () => {
     // set max min
 
     element.childs.push(inputElement);
+
+    // adding the info text
+    let infoText = {
+      tag: "span",
+      att: { class: "info-text" },
+      val: optionsContainer.querySelector("#name-info-text").value,
+    };
+    element.childs.push(infoText);
   }
 
   if (configurationCode == 2 || configurationCode == 4) {
@@ -255,6 +268,6 @@ function applyExtraListeneres() {
 
   // date picker
   $(function () {
-    $(".cust_prop.date-picker").datepicker($.datepicker.regional["fr"]);
+    $(".cust_prop.date-picker").datepicker();
   });
 }
