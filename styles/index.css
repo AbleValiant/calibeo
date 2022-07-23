@@ -124,3 +124,13 @@ h1 {
 input.hide {
   display: none;
 }
+
+.custom_prop span.info-text {
+  font-style: italic;
+  font-size: 12px;
+  color: grey;
+}
+
+.custom_prop input.cust_prop {
+  margin-bottom: 2px;
+}
